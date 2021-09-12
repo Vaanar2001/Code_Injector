@@ -6,6 +6,6 @@ servive apache2 start
 edit the code by changing the injection code on line number 23.
 iptables -I FORWARD -j NFQUEUE --queue-num 0
 now in other terminal 
-python dns_spoofer.py
+python code_injector.py
 after you have completed your task 
 iptables --flush
