@@ -3,7 +3,7 @@ this program will let you to inject any java script code to website ont he targe
 how to use 
 pip install netfilterqueue
 servive apache2 start 
-edit the code by changing the injection code on line number
+edit the code by changing the injection code on line number 23.
 iptables -I FORWARD -j NFQUEUE --queue-num 0
 now in other terminal 
 python dns_spoofer.py
